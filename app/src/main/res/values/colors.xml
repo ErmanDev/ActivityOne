@@ -1,0 +1,17 @@
+<resources>
+    <color name="bg">#F6F7FB</color>
+    <color name="text_primary">#0F172A</color>
+    <color name="text_secondary">#8087A2</color>
+    <color name="stroke">#E6E8EF</color>
+
+    <color name="purple_600">#6C5CE7</color>
+    <color name="purple_400">#A08CFF</color>
+    <color name="card_light">#FFFFFF</color>
+    <color name="white_90">#EDEFFF</color>
+    <color name="white_20">#33FFFFFF</color>
+
+    <color name="red_500">#E74C3C</color>
+    <color name="text_on_primary">#FFFFFF</color>
+    <color name="nav_active">#3F51B5</color>
+    <color name="nav_inactive">#80000000</color>
+</resources>

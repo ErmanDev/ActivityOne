@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp" android:height="120dp"
+    android:viewportWidth="120" android:viewportHeight="120">
+    <!-- Outer ring -->
+    <path android:fillColor="#FFFFFFFF" android:fillAlpha="0.25"
+        android:pathData="M60,6a54,54 0 1,1 0,108a54,54 0 1,1 0,-108z
+                          M60,30a30,30 0 1,0 0,60a30,30 0 1,0 0,-60z"/>
+    <!-- A darker segment -->
+    <path android:fillColor="#FFFFFFFF" android:fillAlpha="0.5"
+        android:pathData="M60,6
+            A54,54 0 0,1 111.4,45
+            L95,52
+            A30,30 0 0,0 60,30z"/>
+    <!-- Another segment -->
+    <path android:fillColor="#FFFFFFFF" android:fillAlpha="0.8"
+        android:pathData="M24,88
+            A54,54 0 0,1 6,60
+            L24,60
+            A30,30 0 0,0 40,78z"/>
+</vector>

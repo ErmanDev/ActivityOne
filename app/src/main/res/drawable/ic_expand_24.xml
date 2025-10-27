@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <group>
+        <!-- Central square -->
+        <path
+            android:strokeWidth="1"
+            android:strokeColor="#FFFFFF"
+            android:fillColor="#00000000"
+            android:pathData="M9,9h6v6h-6z"/>
+    </group>
+    <!-- Top arrow line -->
+    <path
+        android:strokeWidth="1.5"
+        android:strokeColor="#FFFFFF"
+        android:pathData="M12,3v6"/>
+    <path
+        android:strokeWidth="1.5"
+        android:strokeColor="#FFFFFF"
+        android:pathData="M9,6h6"/>
+    <!-- Right arrow line -->
+    <path
+        android:strokeWidth="1.5"
+        android:strokeColor="#FFFFFF"
+        android:pathData="M21,12h-6"/>
+    <path
+        android:strokeWidth="1.5"
+        android:strokeColor="#FFFFFF"
+        android:pathData="M18,9v6"/>
+    <!-- Bottom arrow line -->
+    <path
+        android:strokeWidth="1.5"
+        android:strokeColor="#FFFFFF"
+        android:pathData="M12,21v-6"/>
+    <path
+        android:strokeWidth="1.5"
+        android:strokeColor="#FFFFFF"
+        android:pathData="M9,18h6"/>
+    <!-- Left arrow line -->
+    <path
+        android:strokeWidth="1.5"
+        android:strokeColor="#FFFFFF"
+        android:pathData="M3,12h6"/>
+    <path
+        android:strokeWidth="1.5"
+        android:strokeColor="#FFFFFF"
+        android:pathData="M6,9v6"/>
+</vector>
