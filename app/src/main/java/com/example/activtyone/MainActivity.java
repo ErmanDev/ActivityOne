@@ -39,6 +39,21 @@ public class MainActivity extends AppCompatActivity {
         setIconActive(ivHome);
         setIconInactive(ivWallet);
         setIconInactive(ivChart);
+        setIconInactive(ivProfile);
+
+        ivHome.setOnClickListener(v -> {
+        });
+
+        ivWallet.setOnClickListener(v -> {
+        });
+
+        ivChart.setOnClickListener(v -> {
+            Intent intent = new Intent(this, ActivityScreen.class);
+            startActivity(intent);
+        });
+
+        ivProfile.setOnClickListener(v -> {
+        });
     }
 
     private void setIconActive(ImageView icon) {

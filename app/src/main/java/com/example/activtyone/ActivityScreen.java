@@ -43,10 +43,14 @@ public class ActivityScreen extends AppCompatActivity {
             finish();
         });
 
+        ivWallet.setOnClickListener(v -> {
+        });
 
         ivChart.setOnClickListener(v -> {
         });
 
+        ivProfile.setOnClickListener(v -> {
+        });
     }
 
     private void setIconActive(ImageView icon) {
