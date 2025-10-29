@@ -36,30 +36,26 @@ public class MainActivity extends AppCompatActivity {
         ivChart = findViewById(R.id.ivChart);
         ivProfile = findViewById(R.id.ivProfile);
 
-        ivHome.setOnClickListener(v -> {
-            // Already on home, no action
-        });
-
-        ivWallet.setOnClickListener(v -> {
-            // Add navigation logic if needed
-        });
-
-        ivChart.setOnClickListener(v -> {
-            // Navigate to ActivityScreen
-            Intent intent = new Intent(this, ActivityScreen.class);
-            startActivity(intent);
-        });
-
-        ivProfile.setOnClickListener(v -> {
-            // Add navigation logic if needed
-        });
+        setIconActive(ivHome);
+        setIconInactive(ivWallet);
+        setIconInactive(ivChart);
     }
 
     private void setIconActive(ImageView icon) {
-        icon.setColorFilter(ContextCompat.getColor(this, R.color.nav_active));
+        if (icon == ivHome) {
+            icon.setImageResource(R.drawable.ic_home_selected);
+            icon.clearColorFilter();
+        } else {
+            icon.setColorFilter(ContextCompat.getColor(this, R.color.nav_active));
+        }
     }
 
     private void setIconInactive(ImageView icon) {
-        icon.setColorFilter(ContextCompat.getColor(this, R.color.nav_inactive));
+        if (icon == ivHome) {
+            icon.setImageResource(R.drawable.ic_home);
+            icon.setColorFilter(ContextCompat.getColor(this, R.color.nav_inactive));
+        } else {
+            icon.setColorFilter(ContextCompat.getColor(this, R.color.nav_inactive));
+        }
     }
 }

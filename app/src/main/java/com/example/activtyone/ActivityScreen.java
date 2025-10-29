@@ -32,7 +32,6 @@ public class ActivityScreen extends AppCompatActivity {
         ivProfile = findViewById(R.id.ivProfile);
         
         setupNavigationIcons();
-        // Set Chart icon as active, Home as inactive
         setIconActive(ivChart);
         setIconInactive(ivHome);
     }
@@ -44,28 +43,31 @@ public class ActivityScreen extends AppCompatActivity {
             finish();
         });
 
-        ivWallet.setOnClickListener(v -> {
-            // Add navigation logic if needed
-        });
 
         ivChart.setOnClickListener(v -> {
-            // Already on ActivityScreen, no action
         });
 
-        ivProfile.setOnClickListener(v -> {
-            // Add navigation logic if needed
-        });
     }
 
     private void setIconActive(ImageView icon) {
         if (icon != null) {
-            icon.setColorFilter(ContextCompat.getColor(this, R.color.nav_active));
+            if (icon == ivHome) {
+                icon.setImageResource(R.drawable.ic_home_selected);
+                icon.clearColorFilter();
+            } else {
+                icon.setColorFilter(ContextCompat.getColor(this, R.color.nav_active));
+            }
         }
     }
 
     private void setIconInactive(ImageView icon) {
         if (icon != null) {
-            icon.setColorFilter(ContextCompat.getColor(this, R.color.nav_inactive));
+            if (icon == ivHome) {
+                icon.setImageResource(R.drawable.ic_home);
+                icon.setColorFilter(ContextCompat.getColor(this, R.color.nav_inactive));
+            } else {
+                icon.setColorFilter(ContextCompat.getColor(this, R.color.nav_inactive));
+            }
         }
     }
 }

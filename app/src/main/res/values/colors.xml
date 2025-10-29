@@ -11,6 +11,7 @@
     <color name="white_20">#33FFFFFF</color>
 
     <color name="red_500">#E74C3C</color>
+    <color name="green_500">#27AE60</color>
     <color name="text_on_primary">#FFFFFF</color>
     <color name="nav_active">#3F51B5</color>
     <color name="nav_inactive">#80000000</color>
